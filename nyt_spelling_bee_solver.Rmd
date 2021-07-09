@@ -17,7 +17,7 @@ Below is a super simple Spelling Bee solver:
 ```{r, message=FALSE, error=FALSE}
 library(tidyverse)
 
-#read in most common 100k+ words
+#read in 100k+ words from the Official Scrabble Players Dictionary
 words <- readLines("https://www.gutenberg.org/files/3201/files/CROSSWD.TXT")
 
 tibble(word = words, length = str_length(words)) %>%   #add word length

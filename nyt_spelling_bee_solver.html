@@ -172,7 +172,7 @@ pre code {
 <p>Below is a super simple Spelling Bee solver:</p>
 <pre class="r"><code>library(tidyverse)
 
-#read in most common 100k+ words
+#read in 100k+ words from the Official Scrabble Players Dictionary
 words &lt;- readLines(&quot;https://www.gutenberg.org/files/3201/files/CROSSWD.TXT&quot;)
 
 tibble(word = words, length = str_length(words)) %&gt;%   #add word length
